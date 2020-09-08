@@ -3,5 +3,5 @@
 ## Metodologia
 * Participantes
   * Eduardo Veloso Manhães Seabra
-  * J
+  * Jessyca Batista Marques de Oliveira
   * Nicoly Régia Rodrigues Negrão
