@@ -1,4 +1,4 @@
-# Java-Game-UFCat
+# RPG Java UFCat
 
 ## Metodologia
 * Participantes
