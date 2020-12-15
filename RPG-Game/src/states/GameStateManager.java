@@ -24,6 +24,8 @@ public class GameStateManager implements State {
     public GameStateManager() {
         states = new ArrayList<GameState>();
         ps = new PlayState(this);
+        vs = new VictoryState(this);
+        gso = new GameOverState(this);
         states.add(ps);
     }
     
@@ -60,6 +62,7 @@ public class GameStateManager implements State {
                 if(!states.contains(vs))
                     states.add(0, vs);
                 else {
+                    System.out.println("\n\nTESTE");
                     i = states.indexOf(vs);
                     states.add(0, null);
                     vs = (VictoryState)states.get(i);
@@ -75,6 +78,7 @@ public class GameStateManager implements State {
     public void update() {
         if(states.get(0) != null)
             states.get(0).update();
+        System.out.println("State: " + states.get(0));
     }
     
     @Override

@@ -26,9 +26,9 @@ public class PlayState extends GameState{
     public PlayState(GameStateManager gsm) {
         super(gsm);
         warrior = new Warrior(new Sprite("resources/sprites/warrior/Idle.png"), new Vector2f(10,100), 256);
-        warrior.setLV(10);
+        warrior.setLV(30);
         eMage = new EvilMage(new Sprite("resources/sprites/inimigos/evilmage/Idle.png"), new Vector2f(780,100), 256);
-        eMage.setLV(5);
+        eMage.setLV(1);
     }
     
     @Override
@@ -80,7 +80,6 @@ public class PlayState extends GameState{
     public void stateChange() {
         if(warrior.getIsDead()) {
             getGSM().changeState(GameStateManager.GAMEOVER);
-            
         }
         else if(eMage.getIsDead()) {
             getGSM().changeState(GameStateManager.VICTORY);

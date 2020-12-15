@@ -15,7 +15,6 @@ public class VictoryState extends GameState {
 
     @Override
     public void update() {
-        System.out.println("VICTORY");
     }
 
     @Override
